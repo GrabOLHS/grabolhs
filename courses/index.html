@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search the Grab OLHS course directory.">
+  <title>Grab OLHS Courses</title>
+  <link rel="icon" type="image/jpeg" href="../assets/grabolhsicon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <!-- GoatCounter: replace YOUR-CODE with your GoatCounter site code. -->
+  <script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../">Grab OLHS</a>
+    <nav aria-label="Main navigation"><a href="../">About</a><a href="./" aria-current="page">Courses</a></nav>
+  </header>
+  <main class="main">
+    <p class="eyebrow">Course directory</p>
+    <h1>Grab OLHS <span>courses</span></h1>
+    <p class="intro">Search for a class, then select it to open its Schoology materials page.</p>
+    <div class="search-wrap">
+      <label for="course-search">Find a course</label>
+      <input id="course-search" type="search" autocomplete="off" spellcheck="false" placeholder=" " aria-controls="course-results" aria-expanded="true">
+      <div class="placeholder-rotator" aria-hidden="true">
+        <span>Anatomy &amp; Physiology</span><span>AP Physics C: Mechanics</span><span>Honors Algebra II</span><span>Psychology</span>
+      </div>
+    </div>
+    <div class="results-heading"><h2>Courses</h2><span id="result-count" aria-live="polite">Loading courses…</span></div>
+    <div class="results" id="course-results" role="listbox" aria-label="Course results">
+      <p class="state-message">Loading the course database…</p>
+    </div>
+    <p class="help-text">Can't find your course? <a href="../#course-email-form">Send us the course URL</a>.</p>
+  </main>
+  <footer class="site-footer"><span>Grab OLHS</span><span>Independent student project · Not an official school website</span></footer>
+</body>
+</html>

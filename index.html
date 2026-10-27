@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Grab OLHS — a student-friendly course lookup for Olentangy High School.">
+  <title>Grab OLHS</title>
+  <link rel="icon" type="image/jpeg" href="assets/grabolhsicon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <!-- GoatCounter: replace YOUR-CODE with your GoatCounter site code. -->
+  <script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Grab OLHS home">Grab OLHS</a>
+    <nav aria-label="Main navigation">
+      <a href="./" aria-current="page">About</a>
+      <a href="courses/">Courses</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">OLHS course finder</p>
+      <h1>Grab OLHS</h1>
+      <p class="hero-copy">Find your course materials quickly and easily.</p>
+      <a class="primary-link" href="courses/">Browse courses <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="content-section">
+      <h2><a href="courses/">Grab OLHS Courses</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed neque tincidunt posuere. Explore the course directory to find the Schoology materials page for your class.</p>
+    </section>
+
+    <section class="content-section contact-section">
+      <h2>Course not found</h2>
+      <p>Not all courses have been added yet. Email the URL(s) for your courses to <a href="mailto:grabolhs@yahoo.com">grabolhs@yahoo.com</a>, and they will be added shortly after the email is received. Include the course materials page URL so it can be listed accurately.</p>
+      <form class="email-form" id="course-email-form">
+        <label for="course-urls">Course URL(s)</label>
+        <textarea id="course-urls" name="course-urls" rows="3" placeholder="Paste one or more course URLs here"></textarea>
+        <button type="submit">Email course URL(s)</button>
+      </form>
+      <p class="form-note" id="email-note" role="status">This opens your default email app with the message prepared.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Grab OLHS</span><span>Independent student project · Not an official school website</span></footer>
+</body>
+</html>
