@@ -7,8 +7,7 @@
   <title>Grab OLHS Courses</title>
   <link rel="icon" type="image/jpeg" href="../assets/grabolhsicon.jpg">
   <link rel="stylesheet" href="style.css">
-  <!-- GoatCounter: replace YOUR-CODE with your GoatCounter site code. -->
-  <script data-goatcounter="https://YOUR-CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://grabolhs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -18,13 +17,13 @@
   </header>
   <main class="main">
     <p class="eyebrow">Course directory</p>
-    <h1>Grab OLHS <span>courses</span></h1>
+    <h1>Grab OLHS <span id="course-total"></span> <span>courses</span></h1>
     <p class="intro">Search for a class, then select it to open its Schoology materials page.</p>
     <div class="search-wrap">
       <label for="course-search">Find a course</label>
       <input id="course-search" type="search" autocomplete="off" spellcheck="false" placeholder=" " aria-controls="course-results" aria-expanded="true">
       <div class="placeholder-rotator" aria-hidden="true">
-        <span>Anatomy &amp; Physiology</span><span>AP Physics C: Mechanics</span><span>Honors Algebra II</span><span>Psychology</span>
+        <span>Anatomy &amp; Physiology</span><span>AP Physics C: Mechanics</span><span>Honors Algebra II</span><span>Psychology</span><span>Art I</span><span>AP Calculus AB</span><span>Geometry</span><span>AP Biology</span><span>Ceramics I</span><span>AP Computer Science A</span><span>AP English Language</span><span>AP German</span><span>Study Hall</span><span>AP English Literature</span><span>AP Calculus BC</span><span>AP Micro Economics</span>
       </div>
     </div>
     <div class="results-heading"><h2>Courses</h2><span id="result-count" aria-live="polite">Loading courses…</span></div>

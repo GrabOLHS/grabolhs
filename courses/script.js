@@ -29,6 +29,9 @@
     .then((rows) => {
       courses = rows.filter((course) => course.name && course.link);
       render();
+
+      document.getElementById("course-total").textContent =
+      `${courses.length}`;
     })
     .catch((error) => {
       console.error(
@@ -42,7 +45,7 @@
       const message = document.createElement('p');
       message.className = 'state-message';
       message.textContent =
-        'The course list could not be loaded. If you opened this page directly as a file, use a local web server or GitHub Pages. Also check that assets/course_database.csv exists at the repository root.';
+        'The course list could not be loaded.';
 
       results.append(message);
     });
@@ -106,7 +109,7 @@
     const idIndex = headers.indexOf('id');
 
     if (linkIndex < 0 || nameIndex < 0) {
-      throw new Error('CSV must contain ID,Link,Class Name headers.');
+      throw new Error('Invalid CSV headers.');
     }
 
     return rows
